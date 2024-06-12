@@ -1,7 +1,182 @@
 <div class="music-player">
-  <audio controls>
-    <source [src]="musicUrl" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <!--  <audio controls>-->
+  <!--    <source [src]="musicUrl" type="audio/mpeg">-->
+  <!--    Your browser does not support the audio element.-->
+  <!--  </audio>-->
+  <!--  <audio controls>-->
+  <!--    <source [src]="musicUrl1" type="audio/mpeg">-->
+  <!--    Your browser does not support the audio element.-->
+  <!--  </audio>-->
+
+  <div class="mod_player">
+    <div class="player__hd"></div>
+    <div class="player__bd">
+      <div class="player_style_normal">
+        <div class="mod_songlist_toolbar"><a class="mod_btn"><i class="mod_btn_green__icon_like"></i>收藏<span
+          class="mod_btn__border"></span></a><a class="mod_btn"><i class="mod_btn_green__icon_add"></i>添加到<span
+          class="mod_btn__border"></span></a><a class="mod_btn"><i class="mod_btn_green__icon_down"></i>下载<span
+          class="mod_btn__border"></span></a><a class="mod_btn"><i class="mod_btn_green__icon_delete"></i>删除<span
+          class="mod_btn__border"></span></a><a class="mod_btn"><i class="mod_btn_green__icon_clear"></i>清空列表<span
+          class="mod_btn__border"></span></a></div>
+        <div class="sb_scrollable sb_main sb_viewport">
+          <div class="sb_overview" style="height: 648px;">
+            <div class="mod_songlist mod_songlist--edit">
+              <ul class="songlist__header">
+                <li class="sprite songlist__edit songlist__edit"><input type="checkbox" class="songlist__checkbox"></li>
+                <li class="songlist__header_name">歌曲</li>
+                <li class="songlist__header_author">歌手</li>
+                <li class="songlist__header_time">时长</li>
+              </ul>
+              <ul class="songlist__list">
+                <li>
+                  <div class="songlist__item songlist__item--even">
+                    <div class="sprite songlist__edit songlist__edit"><input type="checkbox" class="songlist__checkbox">
+                    </div>
+                    <div class="songlist__number songlist__number--top">1</div>
+                    <div class="songlist__songname"><i class="songlist__icon songlist__icon_vip sprite" title="VIP"></i><span
+                      class="songlist__songname_txt"><a title="一百万个可能" href="/n/ryqq/songDetail/000eXvbv2GXLdW">一百万个可能</a></span>
+                      <div class="mod_list_menu"><a class="list_menu__item list_menu__play" title="播放"><i
+                        class="list_menu__icon_play"></i><span class="icon_txt">播放</span></a><a
+                        class="list_menu__item list_menu__add" title="添加到歌单"><i
+                        class="list_menu__icon_add"></i><span class="icon_txt">添加到歌单</span></a><a
+                        class="list_menu__item list_menu__share" title="分享"><i class="list_menu__icon_share"></i><span
+                        class="icon_txt">分享</span></a></div>
+                    </div>
+                    <div class="songlist__artist"><a class="playlist__author" title="Christine Welch"
+                                                     href="/n/ryqq/singer/001H6nEZ1G49p9">Christine Welch</a></div>
+                    <div class="songlist__time songlist__time_delete">04:35</div>
+                    <a class="songlist__delete"><span class="icon_txt">删除</span></a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mod_song_info">
+          <div class="song_info__info"><a class="song_info__cover" href="/n/ryqq/albumDetail/004IWoIx34J0fT"
+                                          target="_blank" rel="noopener noreferrer"><img class="song_info__pic"
+                                                                                         loading="lazy"
+                                                                                         src="//y.qq.com/music/photo_new/T002R300x300M000004IWoIx34J0fT_1.jpg?max_age=2592000"
+                                                                                         data-qar-def="//y.qq.com/mediastyle/global/img/album_300.png?max_age=2592000"
+                                                                                         alt="一百万个可能"></a>
+            <div class="song_info__name">歌曲名：<a href="/n/ryqq/songDetail/000eXvbv2GXLdW?" target="_blank"
+                                                   rel="noopener noreferrer">一百万个可能</a></div>
+            <div class="song_info__singer">歌手：<a class="playlist__author" title="Christine Welch"
+                                                   href="/n/ryqq/singer/001H6nEZ1G49p9">Christine Welch</a></div>
+            <div class="song_info__album">专辑：<a href="/n/ryqq/albumDetail/004IWoIx34J0fT" target="_blank"
+                                                  rel="noopener noreferrer">一百万个可能</a></div>
+          </div>
+          <div class="song_info__lyric">
+            <div class="song_info__lyric_box" id="js_lyric_box">
+              <div class="song_info__lyric_inner"
+                   style="transition: transform 0.1s ease-out 0s; transform: translateY(-133.25px);" id="qrc_ctn"><p
+                class=""><span>一百万个可能 - Christine Welch (克丽丝叮)</span></p>
+                <p class=""><span>词：Christine Welch</span></p>
+                <p class=""><span>曲：Skot Suyama 陶山</span></p>
+                <p class=""><span>幽静 窗外满地片片寒花</span></p>
+                <p class=""><span>一瞬间 永恒的时差</span></p>
+                <p class=""><span>窝在棉被里</span></p>
+                <p class=""><span>倾听 踏雪听沉默的声音</span></p>
+                <p class="on"><span>飘雪藏永恒的身影</span></p>
+                <p class=""><span>雪树下等你</span></p>
+                <p class=""><span>在一瞬间</span></p>
+                <p class=""><span>有一百万个可能</span></p>
+                <p class=""><span>该向前走</span></p>
+                <p class=""><span>或者继续等</span></p>
+                <p class=""><span>这冬夜里</span></p>
+                <p class=""><span>有百万个不确定</span></p>
+                <p class=""><span>渐入深夜</span></p>
+                <p class=""><span>或期盼天明</span></p>
+                <p class=""><span>云空的泪</span></p>
+                <p class=""><span>一如冰凌结晶了</span></p>
+                <p class=""><span>成雪花垂</span></p>
+                <p class=""><span>这一瞬间</span></p>
+                <p class=""><span>有一百万个可能</span></p>
+                <p class=""><span>窝进棉被</span></p>
+                <p class=""><span>或面对寒冷</span></p>
+                <p class=""><span>幽静 寒风吹来一缕声音</span></p>
+                <p class=""><span>一瞬间</span></p>
+                <p class=""><span>看着你走近</span></p>
+                <p class=""><span>暖了我冬心</span></p>
+                <p class=""><span>倾听 踏雪听沉默的声音</span></p>
+                <p class=""><span>飘雪藏永恒的身影</span></p>
+                <p class=""><span>雪树下等你</span></p>
+                <p class=""><span>在一瞬间</span></p>
+                <p class=""><span>有一百万个可能</span></p>
+                <p class=""><span>该向前走</span></p>
+                <p class=""><span>或者继续等</span></p>
+                <p class=""><span>这冬夜里</span></p>
+                <p class=""><span>有百万个不确定</span></p>
+                <p class=""><span>渐入深夜</span></p>
+                <p class=""><span>或期盼天明</span></p>
+                <p class=""><span>云空的泪 一如冰凌结晶了</span></p>
+                <p class=""><span>成雪花垂</span></p>
+                <p class=""><span>这一瞬间</span></p>
+                <p class=""><span>有一百万个可能</span></p>
+                <p class=""><span>窝进棉被 或面对寒冷</span></p>
+                <p class=""><span>啊</span></p>
+                <p class=""><span>呜</span></p>
+                <p class=""><span>啊</span></p>
+                <p class=""><span>呜</span></p>
+                <p class=""><span>那晚上会是哪个瞬间</span></p>
+                <p class=""><span>说好的爱会不会改变</span></p>
+                <p class=""><span>而你让我徘徊 在千里之外</span></p>
+                <p class=""><span>Yeah 你让我等待好久</span></p>
+                <p class=""><span>Baby</span></p>
+                <p class=""><span>突然间那是哪个瞬间</span></p>
+                <p class=""><span>你终于出现 就是那个瞬间</span></p>
+                <p class=""><span>等了好久 忍不住伸手 那个瞬间</span></p>
+                <p class=""><span>在一瞬间 有一百万个可能</span></p>
+                <p class=""><span>该向前走 或者继续等</span></p>
+                <p class=""><span>这深夜里 有百万个不确定</span></p>
+                <p class=""><span>渐入冬林 或走向街灯</span></p>
+                <p class=""><span>云空的泪</span></p>
+                <p class=""><span>一如冰凌结晶了</span></p>
+                <p class=""><span>成雪花垂</span></p>
+                <p class=""><span>这一瞬间</span></p>
+                <p class=""><span>有一百万个可能</span></p>
+                <p class=""><span>暖这冬心</span></p>
+                <p class=""><span>或面对寒冷</span></p>
+                <p class=""><span>该向前走</span></p>
+                <p class=""><span>或者继续等</span></p>
+                <p class=""><span>渐入冬林 或走向街灯</span></p>
+                <p class=""><span>窝进棉被 或面对寒冷</span></p>
+                <p class=""><span>暖这冬心 或面对寒冷</span></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="player__ft">
+      <a class="btn_big_prev"><span class="icon_txt">上一首</span></a><a
+      class="btn_big_play"><span class="icon_txt">播放</span></a><a class="btn_big_next"><span
+      class="icon_txt">下一首</span></a>
+      <div class="player_music">
+        <div class="player_music__info" style="padding-right: 300px;"><a title="Back at One" target="_blank"
+                                                                         rel="noopener noreferrer"
+                                                                         href="/n/ryqq/songDetail/000eXvbv2GXLdW?">一百万个可能</a>
+          - <a class="playlist__author" title="Christine Welch" href="/n/ryqq/singer/001H6nEZ1G49p9">Christine Welch</a><a
+            class="player_music__try">试听中，完整播放需要开通会员</a></div>
+        <div class="player_music__time">00:44 / 04:35</div>
+        <div class="player_progress">
+          <div class="player_progress__inner">
+            <div class="player_progress__load" style="width: 21.83%; margin-left: 0%;"></div>
+            <div class="player_progress__play" style="width: 16.08%; margin-left: 0%;"><i
+              class="player_progress__dot"></i></div>
+          </div>
+        </div>
+      </div>
+      <a class="btn_big_style_list" title="列表循环"><span class="icon_txt">列表循环</span></a><a
+      class="btn_big_like btn_big_like--like"><span class="icon_txt">喜欢</span></a><a class="btn_big_down"><span
+      class="icon_txt">下载</span></a><a class="btn_big_only"><span class="icon_txt">打开纯洁模式</span></a><a
+      class="mod_btn_comment btn_comment99"><span class="btn_comment__numbers"><span
+      class="btn_comment__numb10000">1w</span><i class="btn_comment__numb btn_comment__numb_add"></i></span><span
+      class="icon_txt">评论</span></a>
+      <div class="player_progress player_voice"><a class="btn_big_voice"><span class="icon_txt">关闭声音</span></a>
+        <div class="player_progress__inner">
+          <div class="player_progress__play" style="width: 50%;"><i class="player_progress__dot"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
