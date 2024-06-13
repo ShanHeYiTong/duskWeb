@@ -1,0 +1,66 @@
+
+h2 {
+  margin: 0 10%;
+}
+
+.music_list {
+  margin: 0 10%;
+  height: 800px;
+  overflow: auto; /* 当内容超出时，显示滚动条 */
+}
+.music_list::-webkit-scrollbar {
+  width: 8px; /* 滚动条宽度 */
+}
+
+.music_list::-webkit-scrollbar-track {
+  background: #000002; /* 滚动条轨道颜色 */
+}
+
+.music_list::-webkit-scrollbar-thumb {
+  background: #888; /* 滚动条滑块颜色 */
+  border-radius: 6px; /* 滑块圆角 */
+}
+
+.music_list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 滑块悬停时颜色 */
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.music_list__header {
+  margin: 0 10%;
+  background-color: transparent;
+  color: inherit;
+  position: relative;
+  padding-left: 46px;
+  padding-right: 95px;
+  font-size: 18px;
+}
+
+.music_list__header_name {
+  width: 68%;
+  float: left;
+  position: relative;
+}
+
+.music_list__header_author {
+  width: 26%;
+  float: left;
+  position: relative;
+}
+
+.music_list__song_name {
+  width: 67%;
+  float: left;
+  position: relative;
+}
+
+.music_list__song_author {
+  width: 25%;
+  float: left;
+  position: relative;
+}

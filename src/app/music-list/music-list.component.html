@@ -1,0 +1,22 @@
+<div class="music-player">
+  <h2>Music List</h2>
+  <ul class="music_list__header">
+    <!--      <li class="sprite songlist__edit songlist__edit">-->
+    <!--        <input type="checkbox" class="songlist__checkbox">-->
+    <!--      </li>-->
+    <li class="music_list__header_name">歌曲</li>
+    <li class="music_list__header_author">歌手</li>
+    <li class="music_list__header_time">时长</li>
+  </ul>
+
+  <div *ngIf="musicList" class="music_list">
+    <ul>
+      <li *ngFor="let music of musicList">
+        <span class="music_list__song_name">{{music.song_name}}</span>
+        <span class="music_list__song_author">{{music.artist}}</span>
+        <span>{{music.duration}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
