@@ -13,6 +13,9 @@
     <ul>
       <li *ngFor="let music of musicList">
         <span class="music_list__song_name">{{music.song_name}}</span>
+        <audio controls>
+          <source src="{{music.url}}" type="audio/mpeg">
+        </audio>
         <span class="music_list__song_author">{{music.artist}}</span>
         <span>{{music.duration}}</span>
       </li>
