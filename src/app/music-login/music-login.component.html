@@ -1,0 +1,26 @@
+<div class="music-player">
+  <div style="height: 50px"></div>
+  <h2>Music Login</h2>
+<!--  <ul class="music_list__header">-->
+    <li class="music_list__header_name">二维码
+    <button id="btn-qrcode" (click)="getMusicUrl()">生成</button>
+    </li>
+    <img id="qrcode" src="{{url}}" alt="">
+
+<!--&lt;!&ndash;    <li class="music_list__header_author">歌手</li>&ndash;&gt;-->
+<!--&lt;!&ndash;    <li class="music_list__header_time">时长</li>&ndash;&gt;-->
+<!--  </ul>-->
+
+  <div style="text-align:center">
+    <h1>QR Code Login</h1>
+    <button (click)="generateQRCode()">生成</button>
+<!--    <qrcode [qrdata]="qrCodeValue" [size]="256" [level]="'M'"></qrcode>-->
+<!--    <ngx-qrcode [value]="qrCodeValue" [width]="256" ></ngx-qrcode>-->
+
+    <qrcode [qrdata]="qrCodeValue" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+
+<!--    <img id="qrcode" src="{{qrCodeValue}}" alt="">-->
+  </div>
+
+</div>
+

@@ -22,10 +22,10 @@ export class AppService {
     return this.http.post<any>(`${this.apiUrl}/data-endpoint`, data);
   }
 
-  // //获取房间下精彩片段
-  // getRoomWonderfulFragments(jobId : any) {
-  //   return this.http.get(`api/room/callback-segment?job_id=${jobId}`)
-  // }
+  //获取二维码url
+  getUrl() {
+    return this.http.get<any>(`${this.apiUrl}/spider/qrcode`);
+  }
   //
   // //添加精彩片段
   // addWonderfulFragment(body: any) {

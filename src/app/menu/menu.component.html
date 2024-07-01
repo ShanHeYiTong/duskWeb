@@ -1,0 +1,13 @@
+<div style="height: 100px;"></div>
+
+
+<div class="container">
+  <div class="rowLeft">
+    <div class="list-group" tabindex="1" *ngFor="let item of items">
+      <button style="cursor: pointer;" (click)="log()">{{item.id}}</button>
+      {{item.name}}</div>
+  </div>
+  <div class="rowRight">
+    <h1 style="color: #151515;">测试侧边点击效果</h1>
+  </div>
+</div>
