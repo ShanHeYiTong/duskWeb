@@ -5,21 +5,32 @@
     <!--        <input type="checkbox" class="songlist__checkbox">-->
     <!--      </li>-->
     <li class="music_list__header_name">歌曲</li>
-    <li class="music_list__header_author">歌手</li>
-    <li class="music_list__header_time">时长</li>
+<!--    <li class="music_list__header_author">歌手</li>-->
+<!--    <li class="music_list__header_time">时长</li>-->
+    <li class="music_list__header_author">序号</li>
+    <li class="music_list__header_time">播放</li>
   </ul>
 
   <div *ngIf="musicList" class="music_list">
     <ul>
-      <li *ngFor="let music of musicList">
-        <span class="music_list__song_name">{{music.song_name}}</span>
-        <audio controls>
-          <source src="{{music.url}}" type="audio/mpeg">
-        </audio>
-        <span class="music_list__song_author">{{music.artist}}</span>
-        <span>{{music.duration}}</span>
+      <li *ngFor="let music of musicList" >
+        <span class="music_list__song_name">{{music.filename}}</span>
+        <span style="width: 15%">{{music.id}}</span>
+        <div class="container_list">
+          <span class="play_music" (click)="playMusic(music.id)">
+          <a class="list_menu__item list_menu__play" title="播放"  id="playAudio"><i
+            class="list_menu__icon_play"></i></a>
+          </span>
+        </div>
       </li>
     </ul>
+
+    <div>
+      <button class="dn_music"  [disabled]="dnDisabled" (click)="dnMusic()">下一页</button>
+      <button class="up_music"  [disabled]="upDisabled" (click)="upMusic()">上一页</button>
+      <span class="count_music">总共 {{total}} 首歌曲</span>
+    </div>
   </div>
+
 </div>
 

@@ -9,12 +9,11 @@ export class AppService {
 
   constructor(private http: HttpClient) {
   }
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:10000';
 
   // Example method to get data from the backend
   getData(): Observable<any> {
-    // return this.http.get<any>(`${this.apiUrl}/spider/list`);
-    return this.http.get<any>(`http://localhost:3000/spider/list`);
+    return this.http.get<any>(`${this.apiUrl}/spider/list`);
   }
 
   // Example method to post data to the backend
@@ -25,6 +24,16 @@ export class AppService {
   //获取二维码url
   getUrl() {
     return this.http.get<any>(`${this.apiUrl}/spider/qrcode`);
+  }
+
+  //查询全部歌曲
+  getSongList(page: number, limit: number) {
+    return this.http.get(`${this.apiUrl}/file/list/all?page=${page}&limit=${limit}`);
+  }
+
+  //播放歌曲文件
+  playMusic(id: number) {
+    return this.http.get(`${this.apiUrl}/file/stream/${id}`);
   }
   //
   // //添加精彩片段

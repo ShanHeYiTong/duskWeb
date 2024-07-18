@@ -8,6 +8,7 @@ h2 {
   height: 800px;
   overflow: auto; /* 当内容超出时，显示滚动条 */
 }
+
 .music_list::-webkit-scrollbar {
   width: 8px; /* 滚动条宽度 */
 }
@@ -42,25 +43,107 @@ li {
 }
 
 .music_list__header_name {
-  width: 68%;
+  //width: 68%;
+  width: 38%;
   float: left;
   position: relative;
 }
 
 .music_list__header_author {
-  width: 26%;
+  //width: 26%;
+  width: 16%;
   float: left;
   position: relative;
 }
 
 .music_list__song_name {
-  width: 67%;
+  //width: 67%;
+  width: 38%;
   float: left;
   position: relative;
 }
 
 .music_list__song_author {
-  width: 25%;
+  //width: 25%;
+  width: 15%;
   float: left;
   position: relative;
+}
+.container_list {
+  width: 10%;
+  height: auto;
+  margin-left: 14%;
+  position: relative;
+  display: inline-block;
+}
+.play_music {
+  //display: none;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+.container:hover .play_music {
+  display: block;
+}
+
+.up_music {
+  float: right;
+  color: #ffffff;
+  padding-right: 50px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.up_music:hover {
+  color: #555;
+}
+
+.dn_music:hover {
+  color: #555;
+}
+
+.dn_music {
+  float: right;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.count_music {
+  float: right;
+  color: #ffffff;
+  margin-right: 40px;
+}
+
+.music_list__audio {
+  width: 100px;
+  height: 80px;
+}
+
+.list_menu__item {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top
+}
+.list_menu__item:hover .list_menu__icon_play {
+  background-position: -120px 0
+}
+.list_menu__icon_play {
+  background-position: -80px 0
+}
+.list_menu__item:hover .list_menu__icon_play {
+  background-position: -40px 0
+}
+.list_menu__icon_play {
+  background-position: 0 0
+}
+.list_menu__icon_add,.list_menu__icon_delete,.list_menu__icon_down,.list_menu__icon_down_vip,.list_menu__icon_edit,.list_menu__icon_pause,.list_menu__icon_play,.list_menu__icon_share {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url(https://y.qq.com/ryqq/static/media/icon_list_menu.08951c0e.png?max_age=2592000);
+  background-image: -webkit-image-set(url(https://y.qq.com/ryqq/static/media/icon_list_menu.08951c0e.png?max_age=2592000) 1x,url(https://y.qq.com/ryqq/static/media/icon_list_menu@2x.a93095dc.png?max_age=2592000) 2x);
+  background-repeat: no-repeat
 }
